@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import styled from 'styled-components';
 
@@ -36,7 +37,7 @@ function Home() {
           </Link>
           <Button>Styled Button</Button>
         </p>
-        <img src="/images/logo.png" />
+        <Image src="/images/logo.png" alt="" width="125px" height="125px"/>
       </div>
     </React.Fragment>
   );
