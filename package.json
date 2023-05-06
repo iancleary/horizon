@@ -6,8 +6,9 @@
   "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
   "main": "app/background.js",
   "scripts": {
-    "dev": "nextron",
     "build": "nextron build",
+    "dev": "nextron",
+    "lint": "cross-env NODE_ENV=development next lint ./renderer --ext .js,.jsx,.ts,.tsx",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {
@@ -16,12 +17,16 @@
     "styled-components": "^5.3.10"
   },
   "devDependencies": {
+    "@next/eslint-plugin-next": "^13.4.1",
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/styled-components": "^5.1.26",
     "babel-plugin-styled-components": "^2.1.1",
+    "cross-env": "^7.0.3",
     "electron": "^21.3.3",
     "electron-builder": "^23.6.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.1",
     "next": "^12.3.4",
     "nextron": "^8.5.0",
     "react": "^18.2.0",
