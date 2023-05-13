@@ -1,18 +1,23 @@
 import React from 'react';
-import Head from 'next/head';
+import { Metadata } from 'next';
 import Link from 'next/link';
+
+
+// import styled from 'styled-components';
+
+export const metadata: Metadata = {
+  title: 'Next - Nextron (with-typescript)',
+};
+
 
 function Next() {
   return (
     <React.Fragment>
-      <Head>
-        <title>Next - Nextron (with-typescript)</title>
-      </Head>
       <div>
         <p>
           ⚡ Electron + Next.js ⚡ -
-          <Link href="/home">
-            <a>Go to home page</a>
+          <Link href="/">
+            Go to home page
           </Link>
         </p>
       </div>
