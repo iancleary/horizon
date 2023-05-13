@@ -4,7 +4,6 @@ module.exports = {
   // specify an alternate renderer src directory, defaults to 'renderer'
   rendererSrcDir: 'renderer',
 
-  appSrcDir: 'renderer/app',
 
   // main process' webpack config
   webpack: (config, env) => {
