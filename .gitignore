@@ -1,6 +1,7 @@
 node_modules
 *.log
 .next
-app
+app/
+!renderer/app
 dist
 .DS_Store
