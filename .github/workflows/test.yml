@@ -14,14 +14,13 @@ on:
     branches:
       - main
     types:
-      - closed
+      - opened
+      - edited
   workflow_dispatch:
 
 jobs:
   test:
     runs-on: ${{ matrix.os }}
-
-    if: ${{ github.event_name == 'push' || github.event.pull_request.merged == true }}
 
     strategy:
       matrix:
