@@ -1,6 +1,22 @@
 name: Test
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - README.md
+      - .editorconfig
+      - .gitignore
+      - .github/**
+      - .vscode/**
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - README.md
+      - .editorconfig
+      - .gitignore
+      - .vscode/**
 
 jobs:
   test:
