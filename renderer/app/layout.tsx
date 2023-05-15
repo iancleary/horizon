@@ -1,6 +1,8 @@
 import React from 'react';
 import { Metadata } from 'next';
 
+import StyledComponentsRegistry from '../components/StyledComponentsRegistry/StyledComponentRegistry';
+
 // import styled from 'styled-components';
 
 export const metadata: Metadata = {
@@ -14,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
