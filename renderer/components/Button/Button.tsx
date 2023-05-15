@@ -16,7 +16,7 @@ const Button = styled.button`
   opacity: 0.9;
 
   :hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     opacity: 1;
   };
 `;
