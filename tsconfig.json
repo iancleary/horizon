@@ -20,12 +20,12 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./renderer/*"]
+      "@/*": ["./src/*"]
     }
   },
   "exclude": [
     "node_modules",
-    "renderer/next.config.js",
+    "src/next.config.js",
     "app",
     "dist"
   ]
