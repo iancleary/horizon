@@ -8,7 +8,7 @@
   "scripts": {
     "build": "nextron build",
     "dev": "nextron",
-    "lint": "cross-env NODE_ENV=development next lint ./renderer --ext .js,.jsx,.ts,.tsx",
+    "lint": "cross-env NODE_ENV=development next lint ./src --ext .js,.jsx,.ts,.tsx",
     "postinstall": "electron-builder install-app-deps"
   },
   "dependencies": {

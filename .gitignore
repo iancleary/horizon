@@ -4,5 +4,7 @@ node_modules
 app
 !renderer/app
 renderer/out
+!src/app
+src/out
 dist
 .DS_Store
