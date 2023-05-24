@@ -8,8 +8,6 @@
 // Found via:
 // https://github.com/joy-of-react/next-13-styled-components/blob/b7493f64972fa9078986045347e6543d4dff6c2e/src/components/StyledComponentsRegistry/StyledComponentsRegistry.js
 
-'use client';
-
 import React, { useState } from 'react';
 import { useServerInsertedHTML } from 'next/navigation';
 import { ServerStyleSheet, StyleSheetManager } from 'styled-components';

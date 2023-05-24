@@ -17,12 +17,12 @@ if (isProd) {
     width: 1000,
     height: 600,
   });
-
+  const initialRoute = 'home';
   if (isProd) {
-    await mainWindow.loadURL('app://./index.html');
+    await mainWindow.loadURL(`app://./${initialRoute}/index.html`);
   } else {
     const port = process.argv[2];
-    await mainWindow.loadURL(`http://localhost:${port}/`);
+    await mainWindow.loadURL(`http://localhost:${port}/${initialRoute}/`);
     mainWindow.webContents.openDevTools();
   }
 })();
