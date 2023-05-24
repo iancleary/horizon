@@ -17,7 +17,7 @@ if (isProd) {
     width: 1000,
     height: 600,
   });
-  const initialRoute = 'home';
+  const initialRoute = 'home'; // without the initial slash
   if (isProd) {
     await mainWindow.loadURL(`app://./${initialRoute}/index.html`);
   } else {
