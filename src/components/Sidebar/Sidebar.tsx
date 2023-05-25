@@ -3,15 +3,15 @@
 import React from "react";
 import styled from "styled-components";
 
-const Sidebar = ({children}) => {
+const Sidebar = ({children, lists}) => {
   return (
     <Wrapper>
       <div>
         <h1>Lists</h1>
         <ul>
-          <li key="1">list 1</li>
-          <li key="2">list 2</li>
-          <li key="3">list 3</li>
+          {lists.map((list: any) => (
+            <li key={list.id}>{list.name}</li>
+          ))}
         </ul>
       </div>
       {children}
