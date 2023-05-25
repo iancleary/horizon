@@ -19,7 +19,7 @@ if (isProd) {
   });
   const initialRoute = 'home'; // without the initial slash
   if (isProd) {
-    await mainWindow.loadURL(`app://./${initialRoute}/index.html`);
+    await mainWindow.loadURL(`app://./${initialRoute}.html`);
   } else {
     const port = process.argv[2];
     await mainWindow.loadURL(`http://localhost:${port}/${initialRoute}/`);
