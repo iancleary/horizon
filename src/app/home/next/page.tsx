@@ -7,7 +7,7 @@ import Button from '@/components/Button/';
 // import styled from 'styled-components';
 
 export const metadata: Metadata = {
-  title: 'Next - Nextron (with-typescript)',
+  title: 'Home/Next - Nextron (with-typescript)',
 };
 
 
@@ -17,10 +17,10 @@ function Next() {
       <div>
         <p>
           ⚡ Electron + Next.js ⚡ -
-          <Link href="/">
+          <Link href="/home">
             Go to home page
           </Link>
-          <Link href="/">
+          <Link href="/home">
             <Button>Styled Button to go to home page</Button>
           </Link>
         </p>
