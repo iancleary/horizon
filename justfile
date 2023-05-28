@@ -16,6 +16,7 @@ clean:
   rm -rf .next/
   rm -rf dist
   rm -rf node_modules
+  rm -rf src/out
 
 # Upgrade all dependencies to the latest version
 update:
