@@ -10,7 +10,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ['3.11']
         os: [ubuntu-22.04]
     permissions:
       packages: write

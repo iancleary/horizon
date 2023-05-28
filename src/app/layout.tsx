@@ -5,8 +5,6 @@ import './custom.css';
 
 import StyledComponentsRegistry from '../components/StyledComponentsRegistry/StyledComponentRegistry';
 
-// import styled from 'styled-components';
-
 export const metadata: Metadata = {
   title: 'Root - Nextron (with-typescript)',
 };

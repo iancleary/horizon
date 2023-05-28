@@ -16,7 +16,8 @@ clean:
   rm -rf .next/
   rm -rf dist
   rm -rf node_modules
+  rm -rf src/out
 
-# Caddyfile commands (start and stop)
-caddy command:
-  caddy {{command}}
+# Upgrade all dependencies to the latest version
+update:
+  ncu -u

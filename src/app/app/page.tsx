@@ -10,8 +10,8 @@ export default function Page() {
       <HBox>
         <p>
           ⚡ Electron + Next.js ⚡ -
-          <Link href="/home/next">Go to next page</Link>
-          <Link href="/home/next">
+          <Link href="/app/next">Go to next page</Link>
+          <Link href="/app/next">
             <Button>Styled Button to go to next page</Button>
           </Link>
         </p>
