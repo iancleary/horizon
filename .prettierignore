@@ -1,3 +1,5 @@
 .next/
 node_modoles
 */.next/
+.github/
+.vscode/
