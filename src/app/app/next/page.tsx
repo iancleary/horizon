@@ -14,8 +14,8 @@ function Next() {
     <React.Fragment>
       <div>
         <p>
-          ⚡ Electron + Next.js ⚡ -<Link href="/home">Go to home page</Link>
-          <Link href="/home">
+          ⚡ Electron + Next.js ⚡ -<Link href="/app">Go to home page</Link>
+          <Link href="/app">
             <Button>Styled Button to go to home page</Button>
           </Link>
         </p>
