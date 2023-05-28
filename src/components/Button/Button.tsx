@@ -18,19 +18,13 @@ const Button = styled.button`
   :hover {
     transform: scale(1.05);
     opacity: 1;
-  };
+  }
 `;
-
 
 export default function ButtonComponent({
   children,
 }: {
   children: React.ReactNode;
 }) {
-
-  return (
-    <Button>
-      {children}
-    </Button>
-  );
+  return <Button>{children}</Button>;
 }

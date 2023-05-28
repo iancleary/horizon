@@ -55,4 +55,3 @@ labels: 'bug'
 - electron-react-boilerplate version or branch :
 - Operating System and version :
 - Link to your project :
-
