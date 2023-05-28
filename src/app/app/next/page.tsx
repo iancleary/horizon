@@ -3,8 +3,6 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Button from '@/components/Button/';
 
-// import styled from 'styled-components';
-
 export const metadata: Metadata = {
   title: 'Home/Next - Nextron (with-typescript)',
 };
