@@ -1,7 +1,7 @@
 'use client';
 
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 async function getData() {
   const res = await fetch('http://127.0.0.1:8000/lists/all');
@@ -17,13 +17,10 @@ async function getData() {
   return res.json();
 }
 
-
-const Sidebar = ({children, lists}) => {
-
+const Sidebar = ({ children, lists }) => {
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const [error, setError] = React.useState(null);
-
 
   React.useEffect(() => {
     // data fetching here
@@ -31,10 +28,10 @@ const Sidebar = ({children, lists}) => {
       .then((response) => {
         if (!response.ok) {
           throw new Error(
-            `This is an HTTP error: The status is ${response.status}`
+            `This is an HTTP error: The status is ${response.status}`,
           );
         }
-        return response.json()
+        return response.json();
       })
       .then((actualData) => {
         setData(actualData);
@@ -66,7 +63,7 @@ const Sidebar = ({children, lists}) => {
       </div>
       {children}
     </Wrapper>
-  )
+  );
 };
 
 const Wrapper = styled.div`
@@ -77,7 +74,10 @@ const Wrapper = styled.div`
   li {
     list-style: none;
   }
-  ul { margin: 0; padding: 0; }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
 
   background: var(--supporting-400);
 `;

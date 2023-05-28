@@ -1,38 +1,23 @@
-<p align="center"><img src="https://i.imgur.com/NZfsD1p.png"></p>
+# Horizon
 
-## Usage
+This is a NextJS application to pair with [iancleary/tasks](https://github.com/iancleary/tasks).
 
-### Create an App
+You can think of it as a minimal replacement for tick tick or similar applications that allow you to create, edit, update, and delete lists of sections of items.
 
-```
-# with npx
-$ npx create-nextron-app my-app --example basic-typescript
+## Install Dependencies
 
-# with yarn
-$ yarn create nextron-app my-app --example basic-typescript
+```bash
+# using npm
+$ npm install
 
-# with pnpx
-$ pnpx create-nextron-app my-app --example basic-typescript
-```
-
-### Install Dependencies
-
-```
-$ cd my-app
-
-# using yarn or npm
-$ yarn (or `npm install`)
-
-# using pnpm
-$ pnpm install --shamefully-hoist
 ```
 
 ### Use it
 
-```
+```bash
 # development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
+$ npm run dev
 
 # production build
-$ yarn build (or `npm run build` or `pnpm run build`)
+$ npm run build
 ```

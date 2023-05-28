@@ -4,16 +4,33 @@
   "description": "My application",
   "version": "0.0.6",
   "author": "Ian Cleary <github@iancleary.me>",
-  "main": "app/background.js",
   "scripts": {
-    "build": "nextron build",
-    "dev": "nextron",
-    "lint": "cross-env NODE_ENV=development next lint ./src --ext .js,.jsx,.ts,.tsx",
-    "postinstall": "electron-builder install-app-deps"
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "lint-staged": "lint-staged",
+    "prettier": "prettier --write --ignore-unknown .",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "start": "next start",
+    "test": "npm run prettier:check && npm run lint"
+  },
+  "git": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true
   },
   "dependencies": {
-    "electron-serve": "1.1.0",
-    "electron-store": "8.1.0"
+    "next": "13.4.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "styled-components": "5.3.10"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "13.4.1",
@@ -21,16 +38,10 @@
     "@types/react": "18.2.5",
     "@types/styled-components": "5.1.26",
     "babel-plugin-styled-components": "2.1.1",
-    "cross-env": "7.0.3",
-    "electron": "21.3.3",
-    "electron-builder": "23.6.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
-    "next": "13.4.2",
-    "nextron": "8.5.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "styled-components": "5.3.10",
+    "lint-staged": "13.0.3",
+    "prettier": "2.7.1",
     "typescript": "4.9.4"
   },
   "resolutions": {

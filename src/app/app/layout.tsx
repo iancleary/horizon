@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import Sidebar from "@/components/Sidebar/";
+import Sidebar from '@/components/Sidebar/';
 import HBox from '@/components/HBox/HBox';
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default async function DashboardLayout({
       <HBox>
         <Sidebar lists={data}> </Sidebar>
         {children}
-        </HBox>
+      </HBox>
     </>
   );
 }
