@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "13.4.10",
-    "@types/node": "20.4.1",
+    "@types/node": "20.4.8",
     "@types/react": "18.2.14",
     "@types/styled-components": "5.1.26",
     "babel-plugin-styled-components": "2.1.4",
